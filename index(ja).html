@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo-pc</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:700|Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="loader-bg">
+    <img src="image/loading.gif" alt="loading">
+  </div>
+  <!-- header -->
+  <header id="header">
+    <div class="inner">
+      <img class="img-logo" src="image/logo.png" alt="logo">
+      <input type="checkbox" id="nav_input" class="nav_unshown">
+      <label for="nav_input" id="nav_open">
+        <div class="nav_humburger">
+          <img class="nav_img_closed" src="image/hamburger.svg" alt="">
+          <img class="nav_img_opened" src="image/batsu.svg" alt="">
+        </div>
+      </label>
+      <label for="nav_input" class="nav_unshown" id="nav_close"></label>
+      <div id="nav_content">
+        <nav id="item-nav">
+          <ul>
+            <li><a class="active" href="#news">News</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#result">Result</a></li>
+            <li><a href="#price">Price</a></li>
+            <li><a href="#comments">Comments</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="index(de).html"><img src="image/global.png" id="icon-global">Deutsch(DE)</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- /inner -->
+  </header><!-- /header -->
+
+  <!-- mv -->
+  <section id="mv">
+    <div class="inner">
+      <div class="bg-mv-img"></div>
+      <div class="bg-aspect-in"></div>
+      <div class="bg-content">
+        <h1>詩が生れて、画が出来る。 <br>とかくに人の世は住みにくい。</h1>
+        <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+        <button type="button" class="contact-button" href="#contact" style="color:white;">お問い合わせ</button>
+      </div>
+    </div><!-- /inner -->
+  </section><!-- /mv -->
+
+  <!-- news -->
+  <section id="news">
+    <div class="inner">
+      <div class="news-board">
+        <h2 class="title">News</h2>
+        <div class="news-item ni1">
+          <div class="news-item-left">
+            <div class="news-meta">
+              <time class="news-data">2020-04-01</time>
+              <a href="#" class="news-label">時事</a>
+            </div>
+            <a href="#" class="news-tit">地に足をつける接着剤の開発に成功！｜セメダイン株式会社</a>
+          </div>
+          <img src="image/news-arrow.svg" alt="">
+        </div>
+        <div class="news-item">
+          <div class="news-item-left">
+            <div class="news-meta">
+              <time class="news-data">2020-04-01</time>
+              <a href="#" class="news-label">時事</a>
+            </div>
+            <a href="#" class="news-tit">ビジネスマン向けにカタカナ語レッスンをスタート！｜DMM英会話</a>
+          </div>
+          <img src="image/news-arrow.svg" alt="">
+        </div>
+        <div class="news-item">
+          <div class="news-item-left">
+            <div class="news-meta">
+              <time class="news-data">2019-04-01</time>
+              <a href="#" class="news-label">時事</a>
+            </div>
+            <a href="#" class="news-tit">今年も懲りずに、偽物の「エイプリルフールネタまとめサイト」を作成！？｜面白法人カヤック</a>
+          </div>
+          <img src="image/news-arrow.svg" alt="">
+        </div>
+        <div class="parent">
+          <a href="#" class="more">MORE</a>
+        </div>
+      </div>
+    </div><!-- /inner -->
+  </section><!-- /news -->
+
+  <!-- Service -->
+  <section id="service">
+    <div class="inner">
+      <div class="bg-service">
+        <h2 class="title-service">Service</h2>
+        <div class="sv-contents">
+          <div class="sv-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="49.973" height="43" viewBox="0 0 49.973 43.637">
+              <defs>
+                <style>
+                  .a,
+                  .b,
+                  .e {
+                    fill: none;
+                  }
+
+                  .a,
+                  .b,
+                  .c {
+                    stroke: #3e3e3e;
+                    ;
+                  }
+
+                  .a,
+                  .c {
+                    stroke-miterlimit: 10;
+                    stroke-width: 1.417px;
+                  }
+
+                  .c {
+                    fill: #ffffff;
+                    ;
+                  }
+
+                  .d {
+                    stroke: none;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(-209.134 -297.548)">
+                <g class="a" transform="translate(212.508 297.548)">
+                  <rect class="d" width="46.599" height="32.377" rx="2.232" />
+                  <rect class="e" x="0.709" y="0.709" width="45.181" height="30.96" rx="1.524" />
+                </g>
+                <line class="a" x2="45.086" transform="translate(213.113 323.041)" />
+                <rect class="b" width="15.111" height="1.68" rx="0.84"
+                  transform="translate(244.14 320.178) rotate(-45)" />
+                <rect class="b" width="6.967" height="1.68" rx="0.84"
+                  transform="translate(249.898 320.187) rotate(-45)" />
+                <path class="a"
+                  d="M235.807,340.477H243.5a.314.314,0,0,0,.143-.593c-.728-.394-2.589-1.029-2.589-2.03v-8.623h-5.245" />
+                <path class="a"
+                  d="M235.807,340.477h-7.691a.314.314,0,0,1-.143-.593c.728-.394,2.589-1.029,2.589-2.03v-8.623h5.245" />
+                <g class="c" transform="translate(209.134 306.008)">
+                  <rect class="d" width="19.411" height="11.7" />
+                  <rect class="e" x="0.709" y="0.709" width="17.994" height="10.283" />
+                </g>
+                <path class="a" d="M215.307,309.778l-2.194,2.194,2.181,2.181" />
+                <path class="a" d="M222.792,309.778l2.194,2.194-2.181,2.181" />
+                <line class="c" y1="5.598" x2="3.505" transform="translate(217.087 309.021)" />
+              </g>
+            </svg>
+            <h2 style="color: #3e3e3e;">WEB<br> DESIGN</h2>
+            <a href="#contact" class="sv-click">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</a>
+          </div>
+          <div class="sv-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50.068" height="43" viewBox="0 0 50.068 32.377">
+              <defs>
+                <style>
+                  .a,
+                  .b,
+                  .e {
+                    fill: none;
+                  }
+
+                  .a,
+                  .b,
+                  .c {
+                    stroke: #3e3e3e;
+                  }
+
+                  .a,
+                  .c {
+                    stroke-miterlimit: 10;
+                    stroke-width: 1.417px;
+                  }
+
+                  .c {
+                    fill: #fff;
+                  }
+
+                  .d {
+                    stroke: none;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(-262.621 -298.138)">
+                <g class="a" transform="translate(262.621 298.138)">
+                  <rect class="d" width="50.068" height="32.377" rx="2.232" />
+                  <rect class="e" x="0.709" y="0.709" width="48.65" height="30.96" rx="1.524" />
+                </g>
+                <line class="a" x2="48.214" transform="translate(263.659 304.991)" />
+                <circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(266.193 300.595)" />
+                <circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(270.756 300.595)" />
+                <circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(275.32 300.595)" />
+                <path class="a" d="M279.845,313.153l-4.578,4.578,4.551,4.551" />
+                <path class="a" d="M295.464,313.153l4.578,4.578-4.551,4.551" />
+                <line class="c" y1="11.681" x2="7.314" transform="translate(283.56 311.575)" />
+              </g>
+            </svg>
+            <h2 style="color: #3e3e3e;">WEB<br> CODING</h2>
+            <a href="#contact" class="sv-click">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</a>
+          </div>
+          <div class="sv-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50.068" height="43" viewBox="0 0 50.068 32.377">
+              <defs>
+                <style>
+                  .a,
+                  .b,
+                  .e {
+                    fill: none;
+                  }
+
+                  .a,
+                  .b {
+                    stroke: #3e3e3e;
+                  }
+
+                  .a {
+                    stroke-miterlimit: 10;
+                    stroke-width: 1.417px;
+                  }
+
+                  .c {
+                    fill: #fff;
+                  }
+
+                  .d {
+                    stroke: none;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(-319.94 -298.138)">
+                <g class="a" transform="translate(319.94 298.138)">
+                  <rect class="d" width="50.068" height="32.377" rx="2.232" />
+                  <rect class="e" x="0.709" y="0.709" width="48.65" height="30.96" rx="1.524" />
+                </g>
+                <line class="a" x2="48.214" transform="translate(320.978 304.991)" />
+                <circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(323.512 300.595)" />
+                <circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(328.076 300.595)" />
+                <circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(332.639 300.595)" />
+                <path class="c"
+                  d="M344.971,324.593a7.178,7.178,0,1,1,7.182-7.057A7.172,7.172,0,0,1,344.971,324.593Zm-1.612-3.165a.783.783,0,0,0,.039-.081q.69-2.062,1.376-4.127a.289.289,0,0,0-.012-.174q-.467-1.285-.941-2.569a.2.2,0,0,0-.133-.106c-.179-.029-.36-.045-.54-.059s-.272-.1-.27-.255a.232.232,0,0,1,.274-.246c.257.01.513.034.77.045.343.015.686.04,1.028.032.529-.013,1.057-.054,1.586-.077.188-.008.3.088.3.241a.284.284,0,0,1-.3.26c-.226.018-.45.043-.7.066l2.346,6.977c.031-.04.045-.051.049-.064.332-1.112.669-2.224.992-3.339a3.053,3.053,0,0,0,.088-1.358,3.964,3.964,0,0,0-.586-1.442,3.344,3.344,0,0,1-.535-1.186,1.143,1.143,0,0,1,.848-1.28c.1-.017.191-.03.294-.046a6.455,6.455,0,0,0-9.791,1.251c.194,0,.369.006.543,0,.529-.023,1.058-.048,1.586-.082a.253.253,0,0,1,.294.249c.006.145-.108.242-.279.256-.23.018-.46.043-.706.066Zm3.782,2.125-2.047-5.605c-.035.079-.054.113-.066.149q-.552,1.607-1.1,3.214c-.251.729-.5,1.459-.757,2.187-.042.117-.016.163.1.184.335.062.667.148,1.005.188a6.065,6.065,0,0,0,1.97-.088C346.54,323.719,346.832,323.633,347.141,323.553Zm-5.023-.3.044-.032-3.082-8.445c-.606.733-.773,3.109-.3,4.586A6.436,6.436,0,0,0,342.118,323.251Zm6.1-.253.048.026a6.453,6.453,0,0,0,3.185-5.194,6.03,6.03,0,0,0-.791-3.5,5.831,5.831,0,0,1-.054,1.522,9.1,9.1,0,0,1-.428,1.485q-.834,2.382-1.654,4.77Z" />
+              </g>
+            </svg>
+            <h2 style="color: #3e3e3e;">CMS<br> CUSTOMIZE</h2>
+            <a href="#contact" class="sv-click">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- /inner -->
+  </section><!-- /Service -->
+
+  <!-- Result -->
+  <section id="result">
+    <div class="swiper-container">
+      <h2 class="title-result">Result</h2>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="slider-img" src="image/sky1.jpg" alt="slide">
+          <h2>とかくに人の世は住みにくい。</h2>
+          <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+        </div>
+        <div class="swiper-slide">
+          <img class="slider-img" src="image/sky2.jpg" alt="slide">
+          <h2>とかくに人の世は住みにくい。</h2>
+          <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+        </div>
+        <div class="swiper-slide">
+          <img class="slider-img" src="image/sky3.jpg" alt="slide">
+          <h2>とかくに人の世は住みにくい。</h2>
+          <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+        </div>
+        <div class="swiper-slide">
+          <img class="slider-img" src="image/sky5.jpg" alt="slide">
+          <h2>とかくに人の世は住みにくい。</h2>
+          <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+        </div>
+        <div class="swiper-slide">
+          <img class="slider-img" src="image/sky6.jpg" alt="slide">
+          <h2>とかくに人の世は住みにくい。</h2>
+          <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+        </div>
+        <div class="swiper-slide">
+          <img class="slider-img" src="image/sky7.jpg" alt="slide"> <!-- style="width:100%;height:234px;"  -->
+          <h2>とかくに人の世は住みにくい。</h2>
+          <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="view-btn">
+        <a href="#" class="view">VIEW ALL</a>
+      </div>
+    </div>
+  </section><!-- /Result -->
+
+  <!-- price -->
+  <section id="price">
+    <div class="inner">
+      <h2 class="title-price">Price</h2>
+      <div class="pr-contents">
+        <div class="table-scroll">
+          <table class="table-price">
+            <tr>
+              <td height="60">Plan1</td>
+              <td>Price ¥10,000円</td>
+            </tr>
+            <tr>
+              <td height="60">Plan2</td>
+              <td>Price ¥12,000円</td>
+            </tr>
+            <tr>
+              <td height="60">Plan3</td>
+              <td>Price ¥15,000円</td>
+            </tr>
+          </table>
+          <p class="price-txt">※ 上記料金はサンプルです。</p>
+        </div>
+      </div>
+    </div><!-- /inner -->
+  </section><!-- /price -->
+
+  <!-- Comments -->
+  <section id="comments">
+    <div class="inner">
+      <div class="bg-comments">
+        <div class="comments-boxes">
+          <div class="comments-contents">
+            <h2 class="title-comments">Comments</h2>
+            <div class="comments-item">
+              <img class="comments-img" src="image/comments1.png" alt="comments">
+              <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+            </div>
+            <div class="comments-item">
+              <img class="comments-img" src="image/comments2.png" alt="comments">
+              <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+            </div>
+          </div>
+          <img class="comments-img3" src="image/comments3.png" alt="comments">
+        </div>
+      </div>
+    </div><!-- /inner -->
+  </section><!-- /Comments -->
+
+  <!-- Q&A -->
+  <section id="faqs">
+    <div class="inner">
+      <h2 class="title-qa">Q&A</h2>
+      <div class="accordion_items">
+        <div class="accordion_one">
+          <div class="accordion_header stay">
+            <i class="fab fa-quora"></i>
+            <p>キャンセルはいつでも可能ですか？</p>
+          </div>
+          <div class="accordion_inner stay">
+            <div class="box_one">
+              <p class="txt_a_ac">7日間のトライアル期間であればいつでもキャンセルは可能です。それ以降のキャンセルはログインページ内からの手続きが必要となります。</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion_one">
+          <div class="accordion_header stay">
+            <i class="fab fa-quora"></i>
+            <p>パスワードを変更するには？</p>
+          </div>
+          <div class="accordion_inner stay">
+            <div class="box_one">
+              <p class="txt_a_ac">ログインできない場合 パスワードリセットのメールを受信してパスワードをリセットすることができます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion_one">
+          <div class="accordion_header stay">
+            <i class="fab fa-quora"></i>
+            <p>接続できない場合は？</p>
+          </div>
+          <div class="accordion_inner stay">
+            <div class="box_one">
+              <p class="txt_a_ac">接続できない場合は、ネットワーク接続、ご使用のデバイス、またはアプリやアカウントに問題がある可能性があります。</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion_one">
+          <div class="accordion_header stay">
+            <i class="fab fa-quora"></i>
+            <p>どのようにリクエストできますか？</p>
+          </div>
+          <div class="accordion_inner stay">
+            <div class="box_one">
+              <p class="txt_a_ac">ログインページ内のリクエスト欄からお試しください。</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion_one">
+          <div class="accordion_header stay">
+            <i class="fab fa-quora"></i>
+            <p>2020年3月分の料金はいつ引き落としされますか？</p>
+          </div>
+          <div class="accordion_inner stay">
+            <div class="box_one">
+              <p class="txt_a_ac">毎月6日、16日、26日が引き落とし日です。引き落とし日当日が金融機関の休業日の場合、翌営業日が引き落とし日です。（前営業日までに振込必要）</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion_one">
+          <div class="accordion_header stay">
+            <i class="fab fa-quora"></i>
+            <p>前月分の料金が確定するのはいつですか？</p>
+          </div>
+          <div class="accordion_inner stay">
+            <div class="box_one">
+              <p class="txt_a_ac">お客さまの締め日から10日後が料金確定日の目安です。</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion_one">
+          <div class="accordion_header stay">
+            <i class="fab fa-quora"></i>
+            <p>Kann man auch auf deutsch Fragen stellen？</p>
+          </div>
+          <div class="accordion_inner stay">
+            <div class="box_one">
+              <p class="txt_a_ac">Ja, selbstverständlich! Unsere deutsche mitarbeiter können gerne Ihnen in deutsch
+                beantworten.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /inner -->
+  </section><!-- /Q&A -->
+
+  <!-- access -->
+  <section id="access">
+    <div class="inner">
+      <div class="map-contents">
+        <div class="map-txt">
+          <h2 class="title-access">Access</h2>
+          <div class="address">
+            <p>〒106-6126<br>東京都港区六本木 6丁目 10-1<br>六本木ヒルズ森タワー</p>
+          </div>
+          <button class="btn-access" style="color: white;" href="https://goo.gl/maps/Wob6LbamKySS1tVU9">Google
+            Maps</button>
+        </div>
+        <div class="iframe-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.380663493644!2d139.70079541534557!3d35.69224908019177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cda24ca0baf%3A0x361a54c7f2d9b93!2z5pel5pys44CB44CSMTYwLTAwMjIg5p2x5Lqs6YO95paw5a6_5Yy65paw5a6_77yT5LiB55uu77yR77yX4oiS77yX!5e0!3m2!1sja!2sde!4v1575404352453!5m2!1sja!2sde"
+            width="720" height="515" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div><!-- /inner -->
+  </section><!-- /access -->
+
+  <!-- contact -->
+  <section id="contact">
+    <div class="contact-box">
+      <div class="contact-box-title">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contents-contact">
+        <form action="#confirm.php" method="post">
+          <div class="contents-items">
+            <div class="">
+              <label for="comment" class="label">お問い合わせ種別</label>
+            </div>
+            <select class="inputs select">
+              <option>選択してください</option>
+              <option>質問</option>
+              <option>応援コメント</option>
+              <option>お仕事の依頼</option>
+            </select>
+          </div>
+          <div class="contents-items">
+            <div class="label name">
+              <label for="yourname">お名前</label>
+              <span class="must">必須</span>
+            </div>
+            <input class="inputs" type="text" name="yourname" placeholder="氏名" required>
+          </div>
+          <div class="contents-items">
+            <div class="label mail">
+              <label for="mail">メールアドレス</label>
+              <span class="must">必須</span>
+            </div>
+            <input class="inputs" type="email" name="mail" placeholder="sample@gmail.com" required>
+          </div>
+          <div class="contents-items">
+            <div class="label sex">
+              <label for="sex">性別</label>
+            </div>
+            <div class="select-sex">
+              <label class="inputs-radio"><input class="radio-test" type="radio"
+                  name="radio-name"><span>男性</span></label>
+              <label class="inputs-radio"><input class="radio-test" type="radio"
+                  name="radio-name"><span>女性</span></label>
+            </div>
+          </div>
+          <div class="contents-items message">
+            <label for="comment" class="label">メッセージ</label>
+            <textarea name="comment" placeholder="メッセージを入力してください"></textarea>
+          </div>
+
+          <div class="check-contents">
+            <div id="modal-content">
+              <h2>プライバシーポリシー</h2>
+              <div class="modal-items">
+                 <p>HANIWAMAN Corp.（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における，
+                  ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。</p>
+                <div class="modal-item">
+                  <h3>第1条（個人情報）</h3>
+                  <p>「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，
+                    生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，
+                    及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。</p>
+                </div>
+                <div class="modal-item">
+                  <h3>第2条（個人情報の収集方法）</h3>
+                  <p>当社は，ユーザーが利用登録をする際に氏名，生年月日，住所，電話番号，メールアドレス，銀行口座番号，クレジットカード番号，
+                    運転免許証番号などの個人情報をお尋ねすることがあります。また，ユーザーと提携先などとの間でなされたユーザーの個人情報を含む
+                    取引記録や決済に関する情報を,当社の提携先（情報提供元，広告主，広告配信先などを含みます。以下，｢提携先｣といいます。）などから収集することがあります。</p>
+                </div>
+              </div>
+            </div>
+            <div class="check-box">
+              <label><input type="checkbox" name="check-name"><span><a id="modal-open"
+                    style="color: black; text-decoration: underline">個人情報保護方針</a>に同意する</span></label>
+            </div>
+          </div>
+          <div class="left">
+            <input class="contact-button3" type="submit" value="送信する" style="color: white;">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section><!-- /contact -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-contents">
+      <div class="footer-left">
+        <div class="icons">
+          <a href="#" class="btn-social-circle btn-social-circle--twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="btn-social-circle btn-social-circle--facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="btn-social-circle btn-social-circle--instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="footer-txt">
+          <p>サイトマップ</p>
+          <p>個人情報保護方針</p>
+          <p>プライバシーポリシー</p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h2>HANIWAMAN Corp.</h2>
+        <P>© Haniwaman Landing page Sample.</P>
+        <div id="pagetop"><a href="#"></a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+  <script src="./js/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

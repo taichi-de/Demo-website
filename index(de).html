@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-pc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="loader-bg">
+      <img src="image/loading.gif" alt="loading">
+    </div>
+    <!-- header -->
+    <header id="header">
+      <div class="inner">
+        <img class="img-logo" src="image/logo.png" alt="">
+        <input type="checkbox" id="nav_input" class="nav_unshown">
+        <label for="nav_input" id="nav_open">
+          <div class="nav_humburger">
+            <img class="nav_img_closed" src="image/hamburger.svg" alt="">
+            <img class="nav_img_opened" src="image/batsu.svg" alt="">
+          </div>
+        </label>
+        <label for="nav_input" class="nav_unshown" id="nav_close"></label>
+        <div id="nav_content">
+          <nav id="item-nav">
+            <ul>
+              <li><a class="active" href="#news">News</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#result">Result</a></li>
+              <li><a href="#price">Price</a></li>
+              <li><a href="#comments">Comments</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+              <li><a href="#access">Access</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="index(ja).html"><img src="image/global.png" id="icon-global">日本語(JP)</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div><!-- /inner -->
+    </header><!-- /header -->
+
+    <!-- mv -->
+    <section id="mv">
+      <div class="inner">
+          <div class="bg-mv-img"></div>
+          <div class="bg-aspect-in"></div>
+          <div class="bg-content">
+            <h1>Ein Bild sagt mehr als tausend Worte</h1>
+            <p>Herzlich willkommen auf der Demo-Website. Wir beschäftigen uns seit 30 Jahren mit dem Prozess der Aufbereitung von Kunststoffteilen. </p>
+            <button class="contact-btn" href="#" style="color:white;">Jetzt senden</button>
+          </div>
+      </div><!-- /inner -->
+    </section><!-- /mv -->
+
+    <!-- news -->
+    <section id="news">
+      <div class="inner">
+        <div class="news-board">
+          <h2 class="title">News</h2>
+          <div class="news-item ni1">
+            <div class="news-item-left">
+              <div class="news-meta">
+                <time class="news-data">2020-10-28</time>
+                <a href="#" class="news-label">Sport</a>
+              </div>
+              <a href="#" class="news-tit">Bach gibt schon qualifizierten Sportlern Startplatzgarantie</a>
+            </div>  
+            <img src="image/news-arrow.svg" alt="">
+          </div>
+          <div class="news-item">
+            <div class="news-item-left">
+              <div class="news-meta">
+                <time class="news-data">2020-02-09</time>
+                <a href="#" class="news-label">Politik</a>
+              </div>
+              <a href="#" class="news-tit">Bayern verlängert Ausgangsbeschränkungen bis 19. April</a>
+            </div>
+            <img src="image/news-arrow.svg" alt="">
+          </div>
+          <div class="news-item">
+            <div class="news-item-left">
+              <div class="news-meta">
+                <time class="news-data">2019-07-14</time>
+                <a href="#" class="news-label">Ausland</a>
+              </div>
+              <a href="#" class="news-tit">"Wir reinigen mit Seife und Salz. Das muss reichen"</a>
+            </div>
+            <img src="image/news-arrow.svg" alt="">
+          </div>
+          <div class="parent">
+              <a href="#" class="more">MORE</a>
+          </div>
+        </div>
+      </div><!-- /inner -->
+    </section><!-- /news -->
+
+    <!-- Service -->
+    <section id="service">
+      <div class="inner">
+        <div class="bg-service">
+          <h2 class="title-service">Service</h2>
+          <div class="sv-contents">
+            <div class="sv-content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="49.973" height="43" viewBox="0 0 49.973 43.637"><defs><style>.a,.b,.e{fill:none;}.a,.b,.c{stroke: #3e3e3e;;}.a,.c{stroke-miterlimit:10;stroke-width:1.417px;}.c{fill: #ffffff;;}.d{stroke:none;}</style></defs><g transform="translate(-209.134 -297.548)"><g class="a" transform="translate(212.508 297.548)"><rect class="d" width="46.599" height="32.377" rx="2.232"/><rect class="e" x="0.709" y="0.709" width="45.181" height="30.96" rx="1.524"/></g><line class="a" x2="45.086" transform="translate(213.113 323.041)"/><rect class="b" width="15.111" height="1.68" rx="0.84" transform="translate(244.14 320.178) rotate(-45)"/><rect class="b" width="6.967" height="1.68" rx="0.84" transform="translate(249.898 320.187) rotate(-45)"/><path class="a" d="M235.807,340.477H243.5a.314.314,0,0,0,.143-.593c-.728-.394-2.589-1.029-2.589-2.03v-8.623h-5.245"/><path class="a" d="M235.807,340.477h-7.691a.314.314,0,0,1-.143-.593c.728-.394,2.589-1.029,2.589-2.03v-8.623h5.245"/><g class="c" transform="translate(209.134 306.008)"><rect class="d" width="19.411" height="11.7"/><rect class="e" x="0.709" y="0.709" width="17.994" height="10.283"/></g><path class="a" d="M215.307,309.778l-2.194,2.194,2.181,2.181"/><path class="a" d="M222.792,309.778l2.194,2.194-2.181,2.181"/><line class="c" y1="5.598" x2="3.505" transform="translate(217.087 309.021)"/></g></svg>
+              <h2 style="color: #3e3e3e;">WEB<br> DESIGN</h2>
+              <a href="#contact" class="sv-click">Wir bieten Ihnen die ideale Website. Bei Interesse Klicke Sie hier.</a>
+            </div>
+            <div class="sv-content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50.068" height="43" viewBox="0 0 50.068 32.377"><defs><style>.a,.b,.e{fill:none;}.a,.b,.c{stroke:#3e3e3e;}.a,.c{stroke-miterlimit:10;stroke-width:1.417px;}.c{fill:#fff;}.d{stroke:none;}</style></defs><g transform="translate(-262.621 -298.138)"><g class="a" transform="translate(262.621 298.138)"><rect class="d" width="50.068" height="32.377" rx="2.232"/><rect class="e" x="0.709" y="0.709" width="48.65" height="30.96" rx="1.524"/></g><line class="a" x2="48.214" transform="translate(263.659 304.991)"/><circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(266.193 300.595)"/><circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(270.756 300.595)"/><circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(275.32 300.595)"/><path class="a" d="M279.845,313.153l-4.578,4.578,4.551,4.551"/><path class="a" d="M295.464,313.153l4.578,4.578-4.551,4.551"/><line class="c" y1="11.681" x2="7.314" transform="translate(283.56 311.575)"/></g></svg>
+              <h2 style="color: #3e3e3e;">WEB<br> CODING</h2>
+              <a href="#contact" class="sv-click">Wir bieten Ihnen das perfekte Nachdesign. Bei Interesse Klicke Sie hier.</a>
+            </div>
+            <div class="sv-content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50.068" height="43" viewBox="0 0 50.068 32.377"><defs><style>.a,.b,.e{fill:none;}.a,.b{stroke:#3e3e3e;}.a{stroke-miterlimit:10;stroke-width:1.417px;}.c{fill:#fff;}.d{stroke:none;}</style></defs><g transform="translate(-319.94 -298.138)"><g class="a" transform="translate(319.94 298.138)"><rect class="d" width="50.068" height="32.377" rx="2.232"/><rect class="e" x="0.709" y="0.709" width="48.65" height="30.96" rx="1.524"/></g><line class="a" x2="48.214" transform="translate(320.978 304.991)"/><circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(323.512 300.595)"/><circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(328.076 300.595)"/><circle class="b" cx="1.414" cy="1.414" r="1.414" transform="translate(332.639 300.595)"/><path class="c" d="M344.971,324.593a7.178,7.178,0,1,1,7.182-7.057A7.172,7.172,0,0,1,344.971,324.593Zm-1.612-3.165a.783.783,0,0,0,.039-.081q.69-2.062,1.376-4.127a.289.289,0,0,0-.012-.174q-.467-1.285-.941-2.569a.2.2,0,0,0-.133-.106c-.179-.029-.36-.045-.54-.059s-.272-.1-.27-.255a.232.232,0,0,1,.274-.246c.257.01.513.034.77.045.343.015.686.04,1.028.032.529-.013,1.057-.054,1.586-.077.188-.008.3.088.3.241a.284.284,0,0,1-.3.26c-.226.018-.45.043-.7.066l2.346,6.977c.031-.04.045-.051.049-.064.332-1.112.669-2.224.992-3.339a3.053,3.053,0,0,0,.088-1.358,3.964,3.964,0,0,0-.586-1.442,3.344,3.344,0,0,1-.535-1.186,1.143,1.143,0,0,1,.848-1.28c.1-.017.191-.03.294-.046a6.455,6.455,0,0,0-9.791,1.251c.194,0,.369.006.543,0,.529-.023,1.058-.048,1.586-.082a.253.253,0,0,1,.294.249c.006.145-.108.242-.279.256-.23.018-.46.043-.706.066Zm3.782,2.125-2.047-5.605c-.035.079-.054.113-.066.149q-.552,1.607-1.1,3.214c-.251.729-.5,1.459-.757,2.187-.042.117-.016.163.1.184.335.062.667.148,1.005.188a6.065,6.065,0,0,0,1.97-.088C346.54,323.719,346.832,323.633,347.141,323.553Zm-5.023-.3.044-.032-3.082-8.445c-.606.733-.773,3.109-.3,4.586A6.436,6.436,0,0,0,342.118,323.251Zm6.1-.253.048.026a6.453,6.453,0,0,0,3.185-5.194,6.03,6.03,0,0,0-.791-3.5,5.831,5.831,0,0,1-.054,1.522,9.1,9.1,0,0,1-.428,1.485q-.834,2.382-1.654,4.77Z"/></g></svg>
+              <h2 style="color: #3e3e3e;">CMS<br> CUSTOMIZE</h2>
+              <a href="#contact" class="sv-click">Wir bieten Ihnen die technische Unterstützung. Bei Interesse Klicke Sie hier.</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- /inner -->
+    </section><!-- /Service -->
+
+    <!-- Result -->
+    <section id="result">
+      <div class="swiper-container">
+        <h2 class="title-result">Result</h2>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img  class="slider-img" src="image/sky1.jpg" alt="slide">
+            <h2>Freie Texte</h2>
+            <p>Im Internet gibt es mehrere Portale, welche freie Texte oder Texte unter einer freien Lizenz zur Verwendung anbieten. </p>
+          </div>
+          <div class="swiper-slide">
+            <img  class="slider-img" src="image/sky2.jpg" alt="slide">
+            <h2>Freie Texte</h2>
+            <p>Im Internet gibt es mehrere Portale, welche freie Texte oder Texte unter einer freien Lizenz zur Verwendung anbieten. </p>
+            </div>
+          <div class="swiper-slide">
+            <img  class="slider-img" src="image/sky3.jpg" alt="slide">
+            <h2>Freie Texte</h2>
+            <p>Im Internet gibt es mehrere Portale, welche freie Texte oder Texte unter einer freien Lizenz zur Verwendung anbieten. </p>
+            </div>
+          <div class="swiper-slide">
+            <img  class="slider-img" src="image/sky7.jpg" alt="slide">
+            <h2>Freie Texte</h2>
+            <p>Im Internet gibt es mehrere Portale, welche freie Texte oder Texte unter einer freien Lizenz zur Verwendung anbieten. </p>
+            </div>
+          <div class="swiper-slide">
+            <img  class="slider-img" src="image/sky5.jpg" alt="slide">
+            <h2>Freie Texte</h2>
+            <p>Im Internet gibt es mehrere Portale, welche freie Texte oder Texte unter einer freien Lizenz zur Verwendung anbieten. </p>
+          </div>
+          <div class="swiper-slide">
+            <img  class="slider-img" src="image/sky6.jpg" alt="slide"> <!-- style="width:100%;height:234px;"  -->
+            <h2>Freie Texte</h2>
+            <p>Im Internet gibt es mehrere Portale, welche freie Texte oder Texte unter einer freien Lizenz zur Verwendung anbieten. </p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="view-btn">
+            <a href="#" class="view">VIEW ALL</a>
+        </div>
+      </div>
+    </section><!-- /Result -->
+
+    <!-- price -->
+    <section id="price">
+        <div class="inner">
+          <h2 class="title-price">Price</h2>
+          <div class="pr-contents">
+            <div class="table-scroll">
+              <table class="table-price">
+                  <!-- <tr><th height="48"></th><th>column1</th><th>column2</th></tr> -->
+                  <tr><td height="60">row1</td><td>Price ¥10,000円</td></tr>
+                  <tr><td height="60">row2</td><td>Price ¥12,000円</td></tr>
+                  <tr><td height="60">row3</td><td>Price ¥15,000円</td></tr>
+              </table>
+              <p class="price-txt">(Alle Preise verstehen sich exklusive Versandkosten)</p>
+            </div>
+          </div>
+        </div><!-- /inner -->
+    </section><!-- /price -->
+
+    <!-- Comments -->
+    <section id="comments">
+      <div class="inner">
+        <div class="bg-comments">
+          <div class="comments-boxes">
+            <div class="comments-contents">
+              <h2 class="title-comments">Comments</h2>
+              <div class="comments-item">
+                <img  class="comments-img" src="image/comments1.png" alt="comments">
+                <p>Demo-webs Vielfältigkeit hat uns völlig überzeugt. Mit unseren Bewertungen hat sich unsere Reichweite merklich vergrößert – auch überregional.</p>
+              </div>
+              <div class="comments-item">
+                <img  class="comments-img" src="image/comments2.png" alt="comments">
+                <p>Meine Resonanzquote, das sage ich mit Stolz, liegt bei 80%. Wir sammeln Bewertungen unserer Kunden und überzeugen so potentielle Neukunden von unserer Leistung.</p>
+              </div>
+            </div>
+            <img  class="comments-img3" src="image/comments3.png" alt="comments">
+          </div>
+        </div>
+      </div><!-- /inner -->
+    </section><!-- /Comments -->
+
+    <!-- Q&A -->
+    <section id="faqs">
+      <div class="inner">
+        <h2 class="title-qa">Q&A</h2>
+        <div class="accordion_items">
+          <div class="accordion_one">
+            <div class="accordion_header stay">
+              <i class="fab fa-quora"></i><p>Was ist Demo-web?</p>
+              <!-- <span class="btn_plus"></span> -->
+            </div>
+            <div class="accordion_inner stay">
+              <div class="box_one">
+                <p class="txt_a_ac">Demo-web ist ein Online-Service, mit dem Unternehmen das Feedback ihrer Kunden und Geschäftspartner mittels Online-Umfragen einholen können.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion_one">
+            <div class="accordion_header stay">
+              <i class="fab fa-quora"></i><p>Wie kann ich ProvenExpert nutzen?</p>
+              <!-- <span class="btn_plus"></span> -->
+            </div>
+            <div class="accordion_inner stay">
+              <div class="box_one">
+                <p class="txt_a_ac">In wenigen Schritten können Sie Ihr eigenes kostenloses Bewertungsprofil anlegen und Ihre ersten Kundenbewertungen sammeln. </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion_one">
+            <div class="accordion_header stay">
+              <i class="fab fa-quora"></i><p>Was kostet Demo-web?</p>
+              <!-- <span class="btn_plus"></span> -->
+            </div>
+            <div class="accordion_inner stay">
+              <div class="box_one">
+                <p class="txt_a_ac">Demo-web bleibt in der FREE-Version kostenlos. Wenn Sie mehr Funktionen benötigen möchten, können Sie zwischen dem BASIC-, PLUS- und PREMIUM-Paket wählen.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion_one">
+            <div class="accordion_header stay">
+              <i class="fab fa-quora"></i><p>Wie ändere ich mein Passwort?</p>
+              <!-- <span class="btn_plus"></span> -->
+            </div>
+            <div class="accordion_inner stay">
+              <div class="box_one">
+                <p class="txt_a_ac">In den Profileinstellungen im Bereich „Benutzerkonto“ können Sie ein neues Passwort erstellen.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion_one">
+            <div class="accordion_header stay">
+              <i class="fab fa-quora"></i><p>Wie lösche ich mein Benutzerkonto?</p>
+              <!-- <span class="btn_plus"></span> -->
+            </div>
+            <div class="accordion_inner stay">
+              <div class="box_one">
+                <p class="txt_a_ac">In den Profileinstellungen im Bereich „Benutzerkonto“ können Sie Ihr Benutzerkonto unwiderruflich löschen.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion_one">
+            <div class="accordion_header stay">
+              <i class="fab fa-quora"></i><p>Wie lang ist die Mindestlaufzeit?</p>
+              <!-- <span class="btn_plus"></span> -->
+            </div>
+            <div class="accordion_inner stay">
+              <div class="box_one">
+                <p class="txt_a_ac">Die Mindestlaufzeit hängt davon ab, für welche Zahlungsweise Sie sich entschieden haben.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion_one">
+            <div class="accordion_header stay">
+              <i class="fab fa-quora"></i><p>Kann ich jederzeit kündigen?</p>
+              <!-- <span class="btn_plus"></span> -->
+            </div>
+            <div class="accordion_inner stay">
+              <div class="box_one">
+                <p class="txt_a_ac">Ja. Die Kündigung muss spätestens 14 Tage vor Ende der aktuellen Laufzeit erfolgen. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /inner -->
+    </section><!-- /Q&A -->
+
+    <!-- access -->
+    <section id="access">
+      <div class="inner">
+        <div class="map-contents">
+          <div class="map-txt">
+            <h2 class="title-access">Access</h2>
+            <div class="address">
+              <p>Rathausplatz<br>86150 Augsburg</p>
+            </div>
+            <button class="btn-access" style="color: white;" href="https://goo.gl/maps/Wob6LbamKySS1tVU9">Google Maps</button>
+          </div>
+          <div class="iframe-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2650.5707025692723!2d10.895585315727844!3d48.36877227924257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ebd514efc2cfb%3A0x3a84852461ee1892!2sRathausplatz!5e0!3m2!1sde!2sde!4v1585583611690!5m2!1sde!2sde" width="720" height="515" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>  
+      </div><!-- /inner -->
+    </section><!-- /access -->
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="contact-box">
+        <div class="contact-box-title">
+          <h2>Kontakt</h2>
+        </div>
+        <div class="contents-contact">
+          <form action="#confirm.php" method="post">
+            <div class="contents-items">
+              <div class="label sex">
+                <label for="sex">Anrede</label>
+              </div>
+              <div class="select-sex">
+                <label class="inputs-radio"><input class="radio-test" type="radio" name="radio-name"><span>Herr</span></label>
+                <label class="inputs-radio"><input class="radio-test" type="radio" name="radio-name"><span>Frau</span></label>
+              </div>
+            </div>
+            <div class="contents-items">
+              <div class="">
+                <label for="comment" class="label">Bitte wählen</label>
+              </div>
+              <select class="inputs select"> 
+                <option>---</option>
+                <option>Firma</option>
+                <option>Selbstständig</option>
+                <option>Privat</option>
+              </select>  
+            </div>
+            <div class="contents-items">
+                <div class="label name">
+                  <label for="yourname">Name</label>
+                  <span class="must">must</span>
+                </div>
+                <input class="inputs" type="text" name="yourname" placeholder="Name" required>
+            </div>
+            <div class="contents-items">
+              <div  class="label mail">
+                <label for="mail">E-mail</label>
+                <span class="must">must</span>
+              </div>
+              <input class="inputs" type="email" name="mail" placeholder="sample@gmail.com" required>    
+            </div>
+            <div class="contents-items message">
+              <label for="comment" class="label">Nachricht</label>
+              <textarea name="comment" placeholder="Nachricht"></textarea>    
+            </div>
+
+            <div class="check-contents">
+              <div id="modal-content">
+                <h2>Our social media appearances</h2>
+                <div class="modal-items">
+                  <p>Social networks such as Facebook, Google+ etc. can generally analyse your user behaviour comprehensively if you visit their website 
+                  or a website with integrated social media content (e.g. like buttons or banner ads). </p>
+                  <div class="modal-item">
+                    <h3>Legal basis</h3>
+                    <p>Our social media appearances should ensure the widest possible presence on the Internet. This is a legitimate interest within the 
+                      meaning of Art. 6 (1) lit. f GDPR. The analysis processes initiated by the social networks may be based on divergent legal bases to 
+                      be specified by the operators of the social networks (e.g. consent within the meaning of Art. 6 (1) (a) GDPR).</p>
+                  </div>
+                  <div class="modal-item">
+                    <h3>Responsibility and assertion of rights</h3>
+                    <p>If you visit one of our social media sites (e.g., Facebook), we, together with the operator of the social media platform, are responsible 
+                      for the data processing operations triggered during this visit. You can in principle protect your rights (information, correction, deletion, 
+                      limitation of processing, data portability and complaint) vis-à-vis us as well as vis-à-vis the operator of the respective social media portal (e.g. Facebook).</p>
+                  </div>
+                </div>
+              </div>
+              <div class="check-box">
+                <label><input type="checkbox" name="check-name"><span>Bestätigen Sie vor dem Absenden die <a id="modal-open" style="color: black; text-decoration: underline">Datenschutzbestimmungen</a>.</span></label>
+              </div>
+            </div>
+            <div class="left">
+              <input class="contact-btn3" type="submit" value="Absenden" style="color: white;">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section><!-- /contact -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-contents">
+        <div class="footer-left">
+          <div class="icons">
+              <a href="#" class="btn-social-circle btn-social-circle--twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="btn-social-circle btn-social-circle--facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="btn-social-circle btn-social-circle--instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+          </div>
+          <div class="footer-txt">
+            <p>Impressum</p>
+            <p>Datenschutz</p>
+            <p>Offenlegung</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <h2>HANIWAMAN Corp.</h2>
+          <P>© Haniwaman Landing page Sample.</P>
+          <div id="pagetop"><a href="#"></a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <!-- <script src="dist/wow.min.js"></script> -->
+ </body>
+</html>
+
+<!-- Haniwaman3 -->
